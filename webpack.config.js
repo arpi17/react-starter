@@ -31,6 +31,7 @@ module.exports = {
     contentBase: path.join(__dirname, 'public/'),
     port: 3000,
     publicPath: 'http://localhost:3000/build/',
+    open: true,
     hotOnly: true,
     stats: 'minimal',
     clientLogLevel: 'error'
