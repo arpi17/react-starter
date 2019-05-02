@@ -2,9 +2,11 @@
 
 ## Currently using
 
-- Webpack: 4.X
-- Babel: 7.X
-- ESLint: 5.X
+- React: 16
+- Webpack: 4
+- Babel: 7
+- ESLint: 5
+- Jest: 24
 
 ### Global ESLint configuration
 
