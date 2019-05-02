@@ -32,13 +32,13 @@ module.exports = {
     port: 3000,
     publicPath: 'http://localhost:3000/build/',
     open: true,
-    hotOnly: true,
+    hot: true,
     stats: 'minimal',
     clientLogLevel: 'error'
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
       template: 'public/index.html',
       minify: {

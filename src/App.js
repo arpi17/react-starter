@@ -1,4 +1,3 @@
-import { hot } from 'react-hot-loader/root';
 import React, { Component } from 'react';
 import './App.css';
 
@@ -8,11 +7,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isClickled: false
+      isClickled: false,
+      list: ['one', 'two', 'three', 'five']
     };
   }
 
-  // FIXME: Configure ESlint to ingore this warning
   handleClick = () => {
     this.setState({ isClickled: !this.state.isClickled });
   };
@@ -23,9 +22,14 @@ class App extends Component {
         <h1>Hello React World!🚀</h1>
         <TestRender onClick={this.handleClick} />
         <h2>{this.state.isClickled ? 'Clicked' : 'Not Clicked Yet'}</h2>
+        <ul>
+          {this.state.list.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
       </div>
     );
   }
 }
 
-export default hot(App);
+export default App;
