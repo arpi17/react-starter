@@ -9,7 +9,7 @@ module.exports = api => {
           development: api.env('development')
         }
       ]
-    ]
-    // plugins: ['@babel/plugin-proposal-class-properties']
+    ],
+    plugins: ['@babel/plugin-proposal-class-properties']
   };
 };
