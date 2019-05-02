@@ -1,16 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
 
-function TestRender({ onClick }) {
+import React from 'react';
+
+function TestRender({ onClick }: function) {
   return (
     <div>
       <button onClick={onClick}>Click Me!</button>
     </div>
   );
 }
-
-TestRender.propTypes = {
-  onClick: PropTypes.func.isRequired
-};
 
 export default TestRender;

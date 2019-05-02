@@ -22,7 +22,8 @@
   "rules": {
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "react/no-render-return-value": "off"
+    "react/no-render-return-value": "off",
+    "no-unused-vars": "warn"
   },
   "settings": {
     "react": {

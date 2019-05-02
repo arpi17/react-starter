@@ -8,7 +8,8 @@ module.exports = api => {
           // TEST: if this works
           development: api.env('development')
         }
-      ]
+      ],
+      '@babel/preset-flow'
     ],
     plugins: ['@babel/plugin-proposal-class-properties']
   };
