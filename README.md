@@ -3,10 +3,11 @@
 ## Currently using
 
 - React: 16
+- Styled components: 4
 - Webpack: 4
 - Babel: 7
-- ESLint: 5
 - Jest: 24
+- ESLint: 5
 
 ### Global ESLint configuration
 
