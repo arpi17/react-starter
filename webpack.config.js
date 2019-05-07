@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: ['@babel/polyfill', './src/index.js'],
   mode: 'development',
   devtool: 'cheap-module-source-map',
   module: {
