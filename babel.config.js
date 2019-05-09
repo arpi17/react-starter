@@ -12,7 +12,8 @@ module.exports = api => {
     ],
     plugins: [
       '@babel/plugin-proposal-class-properties',
-      'babel-plugin-styled-components'
+      'babel-plugin-styled-components',
+      'react-hot-loader/babel'
     ]
   };
 };

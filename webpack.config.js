@@ -5,9 +5,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 
 module.exports = {
-  entry: ['@babel/polyfill', './src/index.js'],
+  entry: ['./src/index.js', 'react-hot-loader/patch', '@babel/polyfill'],
   mode: 'development',
-  devtool: 'cheap-module-source-map',
   module: {
     rules: [
       {
@@ -22,7 +21,12 @@ module.exports = {
       }
     ]
   },
-  resolve: { extensions: ['*', '.js', '.jsx'] },
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
+  },
   output: {
     path: path.resolve(__dirname, 'build/'),
     publicPath: '/build/',
