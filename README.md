@@ -2,8 +2,9 @@
 
 ## Currently using
 
-- React: 16
+- React: 16.8
 - Styled components: 4
+- Storybook 5
 - Webpack: 4
 - Babel: 7
 - Jest: 24
