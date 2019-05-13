@@ -1,11 +1,12 @@
 [ignore]
-.*/node_modules/.*
+*/babel.config.js/*
+*/webpack.config.js/*
 [include]
 
 [libs]
 
 [lints]
-
+deprecated-utility=off
 [options]
-
+all=true
 [strict]

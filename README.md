@@ -26,6 +26,18 @@ The `master` branch contains the basic setup of the kit. The other branches feat
 
 - `feature/redux`: Using Redux and Redux Thunk for state management
 
+### `flow-typed` configuration
+
+To create a folder for library definitions run
+
+```bash
+yarn run flow-typed install
+```
+
+This will create a `/flow-typed` folder containing the necessary definitions.
+
+**Warning:** the `deprecated-utility` linting rule is turned off by default (see the `.flowconfig` for more detail)
+
 ### Global ESLint configuration
 
 The following plugins need to be installed globally:
