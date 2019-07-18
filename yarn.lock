@@ -4318,10 +4318,10 @@ error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-error-overlay-webpack-plugin@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/error-overlay-webpack-plugin/-/error-overlay-webpack-plugin-0.3.0.tgz#fe7f53bb445fdbb5458409ef07db3161d794bb79"
-  integrity sha512-dRkCBgPQr7KoaT/m/XgJzL0x/7KOqmWM5RvnNTgvh+qDNUy1yRyleBDm/w8P4d7wambEiquf3Q2S+Se7ePEvNg==
+error-overlay-webpack-plugin@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/error-overlay-webpack-plugin/-/error-overlay-webpack-plugin-0.4.0.tgz#5684f55f630fd44796951bcfe2c0f01e596d87dd"
+  integrity sha512-mItuJ3WVDslK9W7d2NBqDfWrXTGrCIGzpSYXUBsR3ddm/AS6zVPKijRAuw0/Ogq3w2nZnWS8r0Hlx5CfzItUew==
   dependencies:
     react-dev-utils "^8.0.0"
     react-error-overlay "^5.1.4"
