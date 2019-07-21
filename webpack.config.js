@@ -9,6 +9,10 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
@@ -21,7 +25,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: path.join(__dirname, 'public'),
     port: 3000,
     publicPath: 'http://localhost:3000/build',
     hot: true,
