@@ -29,8 +29,9 @@ module.exports = {
     port: 3000,
     publicPath: 'http://localhost:3000/build',
     hot: true,
+    open: true,
     stats: 'minimal',
-    open: true
+    clientLogLevel: 'error'
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
 };
