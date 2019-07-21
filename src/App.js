@@ -1,7 +1,7 @@
-import { hot } from 'react-hot-loader/root';
 import React from 'react';
-import './App.css';
 
-const App = () => <h1 style={{ textAlign: 'center' }}>Hello React World!🚀</h1>;
+const App = () => {
+  return <h1 style={{ textAlign: 'center' }}>Hello React Starter!</h1>;
+};
 
-export default hot(App);
+export default App;
