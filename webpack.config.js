@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -37,5 +38,16 @@ module.exports = {
     stats: 'minimal',
     clientLogLevel: 'error'
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'public', 'index.html'),
+      inject: true,
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true
+      }
+    })
+  ]
 };
