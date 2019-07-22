@@ -8,11 +8,15 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: 'babel-loader'
       },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|j?g|svg|gif)?$/,
+        use: 'file-loader'
       }
     ]
   },
@@ -22,7 +26,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     publicPath: '/build/',
-    filename: 'bundle.js'
+    filename: 'main.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
