@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -30,6 +31,7 @@ module.exports = {
     publicPath: '/build/',
     filename: 'main.js'
   },
+  devtool: 'cheap-module-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     port: 3000,
@@ -37,17 +39,18 @@ module.exports = {
     hot: true,
     open: true,
     stats: 'minimal',
-    clientLogLevel: 'error'
+    clientLogLevel: 'error',
+    overlay: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new ErrorOverlayPlugin(),
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html'),
       inject: true,
       minify: {
         collapseWhitespace: true,
-        minifyCSS: true,
         removeComments: true
       }
     })
