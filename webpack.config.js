@@ -39,8 +39,7 @@ module.exports = {
     hot: true,
     open: true,
     stats: 'minimal',
-    clientLogLevel: 'error',
-    overlay: true
+    clientLogLevel: 'error'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
