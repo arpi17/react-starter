@@ -28,14 +28,14 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/build/',
+    publicPath: '/',
     filename: 'main.js'
   },
   devtool: 'cheap-module-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     port: 3000,
-    publicPath: 'http://localhost:3000/build',
+    historyApiFallback: true,
     hot: true,
     open: true,
     stats: 'minimal',
